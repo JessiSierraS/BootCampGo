@@ -9,15 +9,9 @@ func horas (minutos int) int{
 	return horadia
 }
 
-func salarios () (total float64) {
-	var minutos int
-	var categoria string
+func salarios (minutos int, categoria string) (total float64) {
 	var porcentajeb float64 = 1.20
 	var porcentajea float64 = 1.50
-	fmt.Println("Introduzca cantidad de minutos trabajados: ")
-	fmt.Scan(&minutos) 
-	fmt.Println("Introduzca la categoria: ")
-	fmt.Scan(&categoria)
 	horas := horas(minutos)
 	if categoria == "C" {
 		total = float64(1000 * horas)
@@ -30,7 +24,13 @@ func salarios () (total float64) {
 }
 
 func main(){
-	resultado := salarios()
+	var minutos int
+	var categoria string
+	fmt.Println("Introduzca cantidad de minutos trabajados: ")
+	fmt.Scan(&minutos) 
+	fmt.Println("Introduzca la categoria: ")
+	fmt.Scan(&categoria)
+	resultado := salarios(minutos, categoria)
 	fmt.Println("Su salario es de: ", resultado)
 }
 
