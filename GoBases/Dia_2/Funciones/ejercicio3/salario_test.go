@@ -30,9 +30,9 @@ func TestSalario(t *testing.T){
 	total2 := salarios(valor2, categoria2)
 	total3 := salarios(valor3, categoria3)
 
-	assert.Equal(t, salarioesp1, total1, "Salario incorrecto para categoria A")
+	assert.Equal(t, salarioesp1, total1, "Salario incorrecto para categoria C")
 	assert.Equal(t, salarioesp2, total2, "Salario incorrecto para categoria B")
-	assert.Equal(t, salarioesp3, total3, "Salario incorrecto para categoria C")
+	assert.Equal(t, salarioesp3, total3, "Salario incorrecto para categoria A")
 }
 
 /*
