@@ -1,0 +1,3 @@
+[submodule "desafio-go-bases"]
+	path = desafio-go-bases
+	url = git@github.com:bootcamp-go/desafio-go-bases.git
